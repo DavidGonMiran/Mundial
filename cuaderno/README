@@ -1,0 +1,18 @@
+# Cuaderno de Aprendizaje — Mundial 2026
+
+Historial versionado de todas las revisiones del cuaderno de aprendizaje
+del modelo predictivo. Cada archivo `revN.md` es un snapshot completo e
+inmutable de esa revisión — nunca se edita un archivo ya subido.
+
+## Cómo se genera una revisión nueva
+1. Se analiza un partido (HTML en `/`, generado vía Claude Project).
+2. Tras el resultado, se actualiza el cuaderno con Opta + HTML + apuestas
+   reales, partiendo siempre de la última revisión (`revN.md`).
+3. El archivo resultante se guarda como `rev(N+1).md` — nunca se sobrescribe
+   el anterior.
+
+## Última revisión vigente
+👉 `revXX.md` (actualizar este número cada vez)
+
+## Para comparar dos revisiones
+git diff cuaderno/rev40.md cuaderno/rev41.md
